@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model>
+  <DataType name="Customer" meta="x:0;y:26">
+    <Property name="creationType">com.bstek.demo.ims.entity.Customer</Property>
+    <PropertyDef name="id">
+      <Property name="dataType">Integer</Property>
+    </PropertyDef>
+    <PropertyDef name="companyName">
+      <Property name="dataType">String</Property>
+      <Property name="label">客户名称</Property>
+    </PropertyDef>
+    <PropertyDef name="address">
+      <Property name="dataType">String</Property>
+      <Property name="label">地址</Property>
+    </PropertyDef>
+    <PropertyDef name="postalCode">
+      <Property name="dataType">String</Property>
+      <Property name="label">邮编</Property>
+    </PropertyDef>
+    <PropertyDef name="phone">
+      <Property name="dataType">String</Property>
+      <Property name="label">电话</Property>
+    </PropertyDef>
+    <PropertyDef name="fax">
+      <Property name="dataType">String</Property>
+      <Property name="label">传真</Property>
+    </PropertyDef>
+    <PropertyDef name="email">
+      <Property name="dataType">String</Property>
+      <Property name="label">电子邮件</Property>
+    </PropertyDef>
+    <PropertyDef name="contactName">
+      <Property name="dataType">String</Property>
+      <Property name="label">客户联系人</Property>
+    </PropertyDef>
+    <PropertyDef name="contactPhone">
+      <Property name="dataType">String</Property>
+      <Property name="label">联系人电话</Property>
+    </PropertyDef>
+    <PropertyDef name="comment">
+      <Property name="dataType">String</Property>
+      <Property name="label">备注</Property>
+    </PropertyDef>
+  </DataType>
+  <DataType name="Producer" meta="x:135;y:26">
+    <Property name="creationType">com.bstek.demo.ims.entity.Producer</Property>
+    <PropertyDef name="id">
+      <Property name="dataType">Integer</Property>
+    </PropertyDef>
+    <PropertyDef name="companyName">
+      <Property name="dataType">String</Property>
+    </PropertyDef>
+    <PropertyDef name="address">
+      <Property name="dataType">String</Property>
+    </PropertyDef>
+    <PropertyDef name="postalCode">
+      <Property name="dataType">String</Property>
+    </PropertyDef>
+    <PropertyDef name="phone">
+      <Property name="dataType">String</Property>
+    </PropertyDef>
+    <PropertyDef name="fax">
+      <Property name="dataType">String</Property>
+    </PropertyDef>
+    <PropertyDef name="email">
+      <Property name="dataType">String</Property>
+    </PropertyDef>
+    <PropertyDef name="contactName">
+      <Property name="dataType">String</Property>
+    </PropertyDef>
+    <PropertyDef name="contactPhone">
+      <Property name="dataType">String</Property>
+    </PropertyDef>
+    <PropertyDef name="bank">
+      <Property name="dataType">String</Property>
+    </PropertyDef>
+    <PropertyDef name="acctNo">
+      <Property name="dataType">String</Property>
+    </PropertyDef>
+    <PropertyDef name="comment">
+      <Property name="dataType">String</Property>
+    </PropertyDef>
+  </DataType>
+  <DataType name="Category" meta="x:270;y:26">
+    <Property name="creationType">com.bstek.demo.ims.entity.Category</Property>
+    <PropertyDef name="id">
+      <Property name="dataType">Integer</Property>
+    </PropertyDef>
+    <PropertyDef name="name">
+      <Property name="dataType">String</Property>
+      <Property name="label">分类名称</Property>
+    </PropertyDef>
+    <PropertyDef name="comment">
+      <Property name="dataType">String</Property>
+      <Property name="label">备注</Property>
+    </PropertyDef>
+  </DataType>
+  <DataType name="Goods" meta="x:390;y:26">
+    <Property name="creationType">com.bstek.demo.ims.entity.Goods</Property>
+    <Property name="defaultDisplayProperty">name</Property>
+    <PropertyDef name="id">
+      <Property name="dataType">Integer</Property>
+    </PropertyDef>
+    <PropertyDef name="name">
+      <Property name="dataType">String</Property>
+      <Property name="label">客户名称</Property>
+    </PropertyDef>
+    <PropertyDef name="birthplace">
+      <Property name="dataType">String</Property>
+      <Property name="label">产地</Property>
+    </PropertyDef>
+    <PropertyDef name="specification">
+      <Property name="dataType">String</Property>
+      <Property name="label">规格</Property>
+    </PropertyDef>
+    <PropertyDef name="packaging">
+      <Property name="dataType">String</Property>
+      <Property name="label">包装</Property>
+    </PropertyDef>
+    <PropertyDef name="sales">
+      <Property name="dataType">Integer</Property>
+      <Property name="label">总销售量</Property>
+    </PropertyDef>
+    <PropertyDef name="storage">
+      <Property name="dataType">Integer</Property>
+      <Property name="label">库存量</Property>
+    </PropertyDef>
+    <PropertyDef name="totalStorage">
+      <Property name="dataType">Integer</Property>
+      <Property name="label">已采购总量</Property>
+    </PropertyDef>
+    <PropertyDef name="comment">
+      <Property name="dataType">String</Property>
+      <Property name="label">备注</Property>
+    </PropertyDef>
+    <PropertyDef name="categoryId">
+      <Property name="dataType">Integer</Property>
+    </PropertyDef>
+  </DataType>
+  <DataType name="Purchasing" meta="x:540;y:26">
+    <Property name="creationType">com.bstek.demo.ims.entity.Purchasing</Property>
+    <PropertyDef name="id">
+      <Property name="dataType">Integer</Property>
+    </PropertyDef>
+    <PropertyDef name="sellTime">
+      <Property name="dataType">Date</Property>
+      <Property name="label">采购时间</Property>
+    </PropertyDef>
+    <PropertyDef name="comment">
+      <Property name="dataType">String</Property>
+      <Property name="label">备注</Property>
+    </PropertyDef>
+    <PropertyDef name="totalPrice">
+      <Property name="dataType">BigDecimal</Property>
+      <Property name="label">总价</Property>
+    </PropertyDef>
+    <PropertyDef name="unitPrice">
+      <Property name="dataType">BigDecimal</Property>
+      <Property name="label">单价</Property>
+    </PropertyDef>
+    <PropertyDef name="totalnumber">
+      <Property name="dataType">BigDecimal</Property>
+      <Property name="label">销售数量</Property>
+    </PropertyDef>
+    <PropertyDef name="payout">
+      <Property name="dataType">BigDecimal</Property>
+      <Property name="label">支付金额</Property>
+    </PropertyDef>
+    <PropertyDef name="producerId">
+      <Property name="dataType">Integer</Property>
+      <Property name="label">供应商名称</Property>
+    </PropertyDef>
+  </DataType>
+  <DataType name="Sell">
+    <Property name="creationType">com.bstek.demo.ims.entity.Sell</Property>
+    <PropertyDef name="id">
+      <Property name="dataType">Integer</Property>
+    </PropertyDef>
+    <PropertyDef name="sellTime">
+      <Property name="dataType">Date</Property>
+      <Property name="label">销售时间</Property>
+    </PropertyDef>
+    <PropertyDef name="comment">
+      <Property name="dataType">String</Property>
+      <Property name="label">备注</Property>
+    </PropertyDef>
+    <PropertyDef name="totalPrice">
+      <Property name="dataType">BigDecimal</Property>
+      <Property name="label">总价</Property>
+    </PropertyDef>
+    <PropertyDef name="unitPrice">
+      <Property name="dataType">BigDecimal</Property>
+      <Property name="label">单价</Property>
+    </PropertyDef>
+    <PropertyDef name="totalnumber">
+      <Property name="dataType">BigDecimal</Property>
+      <Property name="label">销售数量</Property>
+    </PropertyDef>
+    <PropertyDef name="paid">
+      <Property name="dataType">BigDecimal</Property>
+      <Property name="label">已收金额</Property>
+    </PropertyDef>
+    <PropertyDef name="customerId">
+      <Property name="dataType">Integer</Property>
+    </PropertyDef>
+  </DataType>
+</Model>
